@@ -1,8 +1,8 @@
 body{
     font-family: verdana sans-serif;
     font-size: 13px;/*taille du texte*/
-    margin: 0px 5%;
-    padding: 0px 5%;
+    margin: 10px 0%;
+    padding: 0px 0%;
 }
 
 h1{
@@ -50,12 +50,13 @@ nav a{
         padding: 20px 30px;
         color: #FFF;
         text-transform: uppercase;
-        font-size: 15px;
 }
 
 .table{
     display: table;
     margin: 0 auto;/*centrer les éléments du menu*/
+
+    
 }
 .menu-ind:hover, .presentation{
     border-top: 5px solid #4C8;
@@ -108,7 +109,7 @@ section{
     }
     h1{
             font-size: 28px;
-            margin: 20px 0px 0px 0px
+            margin: 20px 0px 0px 0px;
     }
     nav li a{
             font-size: 12px;
@@ -119,3 +120,8 @@ section{
     }
 }
 
+img{
+    width: 50px;
+    padding-top: 5px;
+   
+}
