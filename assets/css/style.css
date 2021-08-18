@@ -1,8 +1,8 @@
 body{
     font-family: verdana sans-serif;
     font-size: 13px;/*taille du texte*/
-    margin: 10px 0%;
-    padding: 0px 0%;
+    padding: 15px 15px 15px 15px;
+    
 }
 
 h1{
@@ -54,7 +54,7 @@ nav a{
 
 .table{
     display: table;
-    margin: 0 auto;/*centrer les éléments du menu*/
+    
 
     
 }
@@ -120,8 +120,13 @@ section{
     }
 }
 
-img{
+.menu-img img{
     width: 50px;
     padding-top: 5px;
    
+}
+
+.carousel-item.active > img{
+    height: 600px;
+    width: 800px;
 }
