@@ -58,9 +58,18 @@ nav a{
 
     
 }
+
+img{
+    width: 50px;
+    padding-top: 5px;
+    text-align: left;
+   
+}
+
 .menu-ind:hover, .presentation{
     border-top: 5px solid #4C8;
     background-color: RGBa(64, 200, 130, 0.15);
+    margin-left: 20px;
 }
 .menu-lieux:hover{
     border-top: 5px solid #f1dc4f;
@@ -120,8 +129,3 @@ section{
     }
 }
 
-img{
-    width: 50px;
-    padding-top: 5px;
-   
-}
