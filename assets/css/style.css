@@ -3,13 +3,13 @@ body{
     font-size: 13px;/*taille du texte*/
     padding: 15px 15px 15px 15px;
     
-    }
-    
-    h1{
-    font-size: 20px;
+}
+
+h1{
+    font-size: 30px;
     font-weight: normal;/*la graisse du texte*/
     text-align: center;
-    }
+}
 
     p{
     color: rgb(22, 21, 21);
@@ -17,18 +17,6 @@ body{
     }
     
     
-    
-    
-    nav a{
-    display: inline-block;
-    text-decoration: none;/*desactiver le trait sous-alignement*/
-    padding: 20px 30px;
-    color: #FFF;
-    text-transform: uppercase;
-    }
-    
-    
-    .menu-ind:hover, .presentation{
     border-top: 5px solid #4C8;
     background-color: RGBa(64, 200, 130, 0.15);
     margin-left: 20px;
@@ -51,8 +39,15 @@ body{
     
     nav li:hover a{
     padding: 15px 30px 20px 30px;
-    }
+}
+
+
+
+ .menu-img img{
+    width: 50px;
+    padding-top: 5px;
     
+    }
     
     .carousel-item.active > img{
     height: 600px;
