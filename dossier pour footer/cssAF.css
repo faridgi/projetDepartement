@@ -1,0 +1,40 @@
+.pagebasse{
+    background-color: #020B5E;
+    max-width: 100%;
+    height: 230px;
+}
+
+.bleu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.cercle{
+    height: 70px;
+    width: 70px;
+    margin-top: 30px;
+}
+
+.logo{
+    height: 100%;
+    width: 100%;
+}
+
+.list-mentions{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    margin-top: 30px;
+}
+
+li{
+    color: white !important ;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 30px;
+}
