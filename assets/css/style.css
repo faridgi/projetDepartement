@@ -15,9 +15,15 @@ body{
     color: rgb(22, 21, 21);
     font-size: 16px;
     }
+ nav a{
+    display: inline-block;
+    text-decoration: none;/*desactiver le trait sous-alignement*/
+    padding: 20px 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    }
     
-    
-    
+
     nav{
         /*étendre le menu navigation sur toute la page*/
     width: 100%;
@@ -45,7 +51,7 @@ body{
     text-transform: uppercase;
     }
     
-    
+
     .menu-ind:hover{
     border-top: 5px solid #4C8;
     background-color: RGBa(64, 200, 130, 0.15);
