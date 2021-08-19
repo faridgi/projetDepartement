@@ -1,7 +1,9 @@
+/*bar nav*/
+
 nav{
     /*étendre le menu navigation sur toute la page*/
     width: 100%;
-    background-color: #5E07EB;
+    background-color: #020B5E;
     }
     
     nav ul{
@@ -48,4 +50,36 @@ background-color: RGBa(228, 77, 38, 0.15);
 
 nav li:hover a{
 padding: 15px 30px 20px 30px;
+}
+
+/* actu en direct*/
+
+.actu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tiret{
+    width: 350px ;
+    
+}
+
+.tiret2{
+    width: 430px;
+}
+
+.txt{
+    border: red solid 2px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    top: 10px;
+
+}
+
+.txt1{
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
 }
