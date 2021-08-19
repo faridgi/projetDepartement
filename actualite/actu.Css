@@ -1,0 +1,85 @@
+/*bar nav*/
+
+nav{
+    /*étendre le menu navigation sur toute la page*/
+    width: 100%;
+    background-color: #020B5E;
+    }
+    
+    nav ul{
+    /* reset d'élément de liste */
+    margin: 0px;
+    padding: 0px;
+    }
+    
+    nav li{
+    list-style-type: none;
+    /*retirer les puces de la liste */
+    float: left;
+    /*mettre les elements en ligne*/
+    }
+    
+    nav a{
+    display: inline-block;
+    text-decoration: none;/*desactiver le trait sous-alignement*/
+    padding: 20px 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    }
+
+.menu-ind:hover{
+border-top: 5px solid #4C8;
+background-color: RGBa(64, 200, 130, 0.15);
+margin-left: 20px;
+}
+.menu-lieux:hover{
+border-top: 5px solid #F1DC4F;
+background-color: RGBa(241, 211, 79, 0.15)
+}
+
+.menu-marcheF:hover{
+border-top: 5px solid #5E07EB;
+background-color: RGBa(241, 211, 79, 0.15);
+}
+
+.menu-act:hover{
+border-top: 5px solid #E44D26;
+background-color: RGBa(228, 77, 38, 0.15);
+}
+
+
+nav li:hover a{
+padding: 15px 30px 20px 30px;
+}
+
+/* actu en direct*/
+
+.actu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tiret{
+    width: 350px ;
+    
+}
+
+.tiret2{
+    width: 430px;
+}
+
+.txt{
+    border: red solid 2px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    top: 10px;
+
+}
+
+.txt1{
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
