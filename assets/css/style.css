@@ -55,15 +55,12 @@ nav a{
 .table{
     display: table;
     
-
-    
 }
 
 img{
     width: 50px;
     padding-top: 5px;
     text-align: left;
-   
 }
 
 .menu-ind:hover, .presentation{

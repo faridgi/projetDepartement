@@ -30,11 +30,18 @@
     margin-top: 30px;
 }
 
-li{
-    color: white !important ;
+.texte{
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    cursor: pointer;
+}
+
+.texte:hover{
+    color: rgb(18, 145, 50);
 }
 
 .copyright{
     text-align: center;
     margin-top: 30px;
+    color: white;
 }
