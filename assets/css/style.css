@@ -3,13 +3,13 @@ body{
     font-size: 13px;/*taille du texte*/
     padding: 15px 15px 15px 15px;
     
-}
-
-h1{
-    font-size: 30px;
+    }
+    
+    h1{
+    font-size: 20px;
     font-weight: normal;/*la graisse du texte*/
     text-align: center;
-}
+    }
 
     p{
     color: rgb(22, 21, 21);
@@ -17,6 +17,36 @@ h1{
     }
     
     
+    
+    nav{
+        /*étendre le menu navigation sur toute la page*/
+    width: 100%;
+    background-color: #5B5F63;
+    }
+    
+    nav ul{
+        /* reset d'élément de liste */
+    margin: 0px;
+    padding: 0px;
+    }
+    
+    nav li{
+    list-style-type: none;
+    /*retirer les puces de la liste */
+    float: left;
+    /*mettre les elements en ligne*/
+    }  
+     
+    nav a{
+    display: inline-block;
+    text-decoration: none;/*desactiver le trait sous-alignement*/
+    padding: 20px 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    }
+    
+    
+    .menu-ind:hover{
     border-top: 5px solid #4C8;
     background-color: RGBa(64, 200, 130, 0.15);
     margin-left: 20px;
@@ -39,15 +69,13 @@ h1{
     
     nav li:hover a{
     padding: 15px 30px 20px 30px;
-}
-
-
-
- .menu-img img{
-    width: 50px;
-    padding-top: 5px;
-    
     }
+    .menu-img img{
+        width: 50px;
+        padding-top: 5px;
+        
+        }
+    
     
     .carousel-item.active > img{
     height: 600px;
