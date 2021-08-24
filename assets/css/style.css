@@ -1,6 +1,6 @@
 body{
-    font-size: 13px;
-    padding: 15px 15px 15px 15px;
+    font-size: 13px !important;
+    padding: 15px 15px;
 
     
     }
@@ -31,7 +31,7 @@ body{
  nav a{
     display: inline-block;
     text-decoration: none !important;  /*desactiver le trait sous-alignement*/
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin-left: 5x; 
     color: #FFF;
     font-family:'Nunito', sans-serif;
@@ -55,7 +55,7 @@ body{
     height: 100%;
     position: absolute;
     top: 0; left: 0;
-    background: url('../img/ain.jpg') center no-repeat;
+    background: url('../img/ain.jpg') center no-repeat;/*image en arriére plan barnav*/
     background-size: cover;
     z-index: 1;
     opacity: 0.2; 
@@ -135,10 +135,8 @@ object-fit: cover;
 }
 
 .sect{
-    padding-top: 5px;
-    margin-top: 5px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-top: 25px;
+    margin-top: 25px 5px;
 }
 
 .dimensionphoto{

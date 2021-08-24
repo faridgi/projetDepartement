@@ -1,5 +1,6 @@
 
     <?php
+    include('connexion.php');
     $errors = '';
     $myemail = 'fariduke97@hotmail.fr';//<-----Put Your email address here.
     if(empty($_POST['name']) ||
@@ -8,7 +9,6 @@
     {
     $errors .= "\n Error: all fields are required";
     }
-    
     $name = $_POST['name'];
     $email_address = $_POST['email'];
     $message = $_POST['message'];
@@ -16,17 +16,18 @@
     if (!preg_match(
     "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,10})$/i",
     $email_address))
+    
     {
     $errors .= "\n Error: Invalid email address";
     }
     
+    
+    
+    
     if( empty($errors))
     
     {
-        include('connexion.php');
-        
-2
-    $query = "INSERT INTO `contact` (name, email, subject, message) VALUES ('$name', '$email', '$subject', '$messag
+    $query = "INSERT INTO `contact` (name, email, subject, message, time) VALUES ('$name', '$email_address', '$subject', '$message, NOW())";
     $result = mysqli_query($connection, $query);
     
     $to = $myemail;
@@ -47,7 +48,7 @@
     
     //redirect to the 'thank you' page
     
-    header('Location: contact.html');
+    header('Location: index.html');
     
     }
     
