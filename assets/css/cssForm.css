@@ -28,3 +28,10 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
+  
+.secForm{
+  margin-top: 50px;
+  margin-bottom: 250px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
