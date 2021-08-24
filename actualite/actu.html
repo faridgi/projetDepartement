@@ -4,50 +4,280 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./actu.css">
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm">
-        <!-- Brand/logo -->
-            <a class="navbar-brand" href="#">
-            <img src="../logo.png" alt="logo" style="width:150px;">
-            </a>
-        w
-        <!-- Links -->
-            <ul class="navbar-nav">
-        <li class="menu-ind">
-        <a href="index.html">Accueil</a>
-        </li>
-        <li class="menu-lieux">
-        <a href="lieux_incont.html">Lieux incontournables</a>
-        </li>
-        <li class="menu-marcheF">
-        <a href="marchesFoires.html">Marchés et Foires</a>
-        </li>
-        <li class="menu-act">
-        <a href="actualites.html">Actualités</a>
-        </li>
-            </ul>
-            </nav><br>
+    <div class="header">
+        <div class="header__texture"></div>
+
+            <nav class=" containerNav navbar navbar-expand-sm bg-dark navbar-dark">
+    
+                <a class="menu-img" href="#">
+                <img src="./image-footer/logoFin.png" alt="logo" style="width:200px;">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="menu-ind">
+                    <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="menu-lieux">
+                    <a href="lieux_incont.html"><i class="fas fa-search-location"></i> Lieux incontournables</a>
+                    </li>
+                    <li class="menu-marcheF">
+                    <a href="marchesFoires.html"><i class="fas fa-shopping-basket"></i> Marches & Foires</a>
+                    </li>
+                    <li class="menu-act">
+                    <a href="actualites.html"><i class="fas fa-newspaper"></i> Actualites</a>
+                    </li>
+                    <li class="menu-cont">
+                    <a href="contact.html"><i class="far fa-envelope"></i> Nous Contactez</a>
+                    </li>
+                </ul>
+            </nav>
+    </div>
+        <!--Barre rouge-->
     <section>
         <div class="actu">
             <div class="tiret">
                 <hr>
             </div>
             <div class="txt">
-                <p class="txt1">MARCHÉS ET FOIRES</p>
+                <h2 class="txt1">MARCHÉS ET FOIRES</h2>
             </div>
             <div class="tiret2">
                 <hr>
             </div>
         </div>
     </section>
-    <section>
-        
+    
+    <!--Carte interactive et geographique-->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-xl-6">
+                <div class="carte-marches">
+                    
+                </div>
+
+            </div>
+            <div class="col-12 col-xl-6">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-4 carte">
+                        <div class="card">
+                            <a href="https://fr.wikipedia.org/wiki/Bresse"><img src="./Image-card/Paysage-bresse.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                              <h5 class="card-title">Bresse</h5>
+                              <p class="card-text">La Bresse est une région naturelle de France , située entre les régions Auvergne-Rhône-Alpes et Bourgogne-Franche-Comté. Les habitants de la Bresse sont appelés les «Bressans» </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 carte">
+                        <div class="card">
+                            <a href="https://fr.wikipedia.org/wiki/Revermont"><img src="./Image-card/paysage-revermont.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                              <h5 class="card-title">Revermont</h5>
+                              <p class="card-text">Le Revermont proprement dit, qu'on peut définir comme les premiers contreforts du massif du Jura, et la frange bressane qui s'étire de Bourg-en-Bresse à Lons-le-Saunier.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 carte">
+                        <div class="card departemen">
+                            <a href="https://fr.wikipedia.org/wiki/Val_de_Sa%C3%B4ne_(r%C3%A9gion_naturelle)"><img src="./Image-card/Paysage-val-de-saone.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                              <h5 class="card-title">Val de Saône</h5>
+                              <p class="card-text">Le Val de Saône est une des neuf subdivisions de la métropole de Lyon. </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 carte">
+                        <div class="card departements">
+                            <a href="https://fr.wikipedia.org/wiki/Dombes"><img src="./Image-card/Dombes.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                              <h5 class="card-title">Dombes</h5>
+                              <p class="card-text">La Dombes correspond à un plateau d'origine morainique (dépôt de sable, de cailloux et d'argile) situé dans le département de l'Ain au nord-est de Lyon.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 carte">
+                        <div class="card">
+                            <a href="https://fr.wikipedia.org/wiki/C%C3%B4ti%C3%A8re"><img src="./Image-card/Cotiere.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                              <h5 class="card-title">Côtière</h5>
+                              <p class="card-text">La région s'articule autour de ses trois principales villes : Miribel, Montluel et Meximieux. La Côtière se trouve administrativement dans l'arrondissement de Bourg-en-Bresse. Par ailleurs, toutes les communes de cette région font partie de Lyon.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 carte">
+                        <div class="card departement">
+                            <a href="https://fr.wikipedia.org/wiki/Pays_de_Gex"><img src="./Image-card/Pays-de-gex.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                              <h5 class="card-title">Pays de Gex</h5>
+                              <p class="card-text">Le pays de Gex esr une région historique française située au nord-est du departement de l'Ain en région Auvergne-Rhône-Alpes</p>
+      
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 offset-xl-2 col-md-6 col-xl-4 carte">
+                        <div class="card">
+                            <a href="https://fr.wikipedia.org/wiki/Haut-Bugey"><img src="./Image-card/Haut-Bugey.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                              <h5 class="card-title">Haut-Bugey</h5>
+                              <p class="card-text">Le Haut-Bugey est la partie nord de la région historique du Bugey. Elle forme un triangle entre les villes d'Oyonnax, Poncin et Bellegarde-sur-Valserine. Et Nantua se trouve au cœur du Haut-Bugey</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 carte">
+                        <div class="card departement">
+                            <a href="https://fr.wikipedia.org/wiki/Bas-Bugey"><img src="./Image-card/bas-bugey.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                              <h5 class="card-title">Bas-Bugey</h5>
+                              <p class="card-text">Le Bas-Bugey ou Bugey blanc est la partie sud de la région historique du Bugey, dans le département français de l'Ain en région Auvergne-Rhône-Alpes.</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+
+
+
+
+
+
+
+
+            
+    <!--Presentation marcher et foire-->
+    <section class="row">
+        <div class="card col-12 col-md-8  carte-annonce" >
+            <div class="row g-0">
+            <div class="col-12 col-md-6">
+                <div class="card-body">
+                    <a href="">
+                        <h2 class="card-title">
+                            Brocante geek et jouets anciens <br>
+                            Bourg-en-Bresse, le 13 juillet 2008
+                        </h2>
+                    </a>
+                    <p>
+                        Petite brocante, idéale pour tous fan de jeux vidéos, jouets pour enfants ou de collection.
+                    </p>
+                    <p>
+                        Entrée visiteur : <br>
+                        - 4€  adulte (uniquement sur place) <br>
+                        - Gratuit pour les -12ans 
+                    </p>
+                    <p>
+                        Entrée visiteur sans file d'attente : <br>
+                        -6€ adulte (uniquement sur le site alik.fr) <br>
+                        -2€ enfant (sur place ou sur le site alik.fr)
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 flex-image">
+                <img src="./Image annonce/Brocante-geek.jpg" class="image-annonce" alt="...">
+            </div>
+            </div>
+        </div>
+        <div class="card col-12 col-md-8 carte-annonce">
+            <div class="row g-0">
+            <div class="col-12 col-md-6">
+                <div class="card-body">
+                    <a href="">
+                        <h2 class="card-title">
+                            Une nuit au moyen âge <br>
+                            Grimaud, mardi 24 août 2052
+                        </h2>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus consequuntur, architecto temporibus iste dolor aliquam.
+                    </p>
+                    <p>
+                        Entrée visiteur : <br>
+                        - 3€  adulte (uniquement sur place) <br>
+                        - Gratuit pour les -12ans 
+                    </p>
+                    <p>
+                        Entrée visiteurs sans file d'attente : <br>
+                        -4€ adulte (uniquement sur le site alik.fr) <br>
+                        -4€ enfant (sur place ou sur le site alik.fr)
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 flex-image">
+                <img src="./Image annonce/moyen-age.jpg"  alt="...">
+            </div>
+            </div>
+        </div>
+        <div class="card col-12 col-md-8 carte-annonce">
+            <div class="row g-0">
+            <div class="col-12 col-md-6">
+                <div class="card-body">
+                    <a href="">
+                        <h2 class="card-title">
+                            Vide-grenier, Brocante <br>
+                            Sainte-Euphemie, samedi 22 juin 2072
+                        </h2>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus consequuntur, architecto temporibus iste dolor aliquam.
+                    </p>
+                    <p>
+                        Entrée visiteur : <br>
+                        - Gratuit pour adulte (uniquement sur place) <br>
+                        - Gratuit pour les -12ans 
+                    </p>
+                    <p>
+                        Entrée visiteurs sans file d'attente : <br>
+                        - 2€ adulte (uniquement sur le site alik.fr) <br>
+                        - Gratuit pour enfants
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 flex-image">
+                <img src="./Image annonce/vide-grenier.jpg" style="padding: 5px;" alt="...">
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="pagebasse">
+            <div class="bleu">
+                <div class="cercle">
+                    <a href="#"><img src="./image-footer/facebook.png" class="logo" alt="logo"></a>
+                </div>
+                <div class="cercle">
+                    <a href="#"><img src="./image-footer/Indeed.png" class="logo" alt="logo"></a>   
+                </div>
+                <div class="cercle">
+                    <a href="#"><img src="./image-footer/instagram.png" class="logo" alt="logo"></a> 
+                </div> 
+                <div class="cercle">
+                    <a href="#"><img src="./image-footer/Pinterest.png" class="logo" alt="logo"></a>  
+                </div>
+                <div class="cercle">
+                    <a href="#"><img src="./image-footer/tweeter.png" class="logo" alt="logo"></a>  
+                </div>
+            </div>
+            <ul class="list-mentions">
+                <li class="mentions"><a href="#" class="texte">Mentions Légales</a></li>
+                <li class="mentions"><a href="#" class="texte">Conditions Générales</a></li>
+                <li class="mentions"><a href="#" class="texte">Politique des cookies</a></li>
+            </ul>
+            <p class="copyright">Copyright 2021 afk-toutes reproductions interdites</p>
+        </section>
+    </footer>
 </body>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </html>
