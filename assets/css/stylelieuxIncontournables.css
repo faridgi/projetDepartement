@@ -59,16 +59,9 @@ nav a{
     
     nav li:hover a{
     padding: 15px 30px 20px 30px;
-}
-
-    .titrelieux{
-        text-align: center;
-        position: relative;
-        margin: 40px auto;
-        max-width: 100%;
-      
     }
-    .titrelieux:before{
+
+    .titre:before{
         content: "";
         display: block;
         width: 100%;
@@ -80,7 +73,7 @@ nav a{
         z-index: -2;
     }
 
-    .titrelieux:after{
+    .titre:after{
         content: "";
         display: block;
         width: 100%;
@@ -92,7 +85,8 @@ nav a{
         z-index: -2;
     }
 
-    .titrelieux span{
+    .titre span{
+
         border: solid 2px;
         border-radius: 5px;
         border-color: rgb(91, 100, 82);
