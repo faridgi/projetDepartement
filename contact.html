@@ -2,10 +2,19 @@
 <html lang="fr-FR">
     <head>
         <title>site département de l'ain farid</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="styles.css" >
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/9354874833.js" crossorigin="anonymous"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"><!--affichage sur mobile*/-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/cssForm.css">
+        
         <link rel="stylesheet" href="assets/js/imageA.js">
         <link rel="stylesheet" href="assets/css/footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,16 +28,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
-
-<body>
-
-    <div class="header">
+    <body>
+      <div class="header">
         <div class="header__texture"></div>
 
             <nav class=" containerNav navbar navbar-expand-sm bg-dark navbar-dark">
     
                 <a class="menu-img" href="#">
-                <img src="assets/img/logofin.png" alt="logo" style="width:200px;">
+                <img src="assets/img/logoFin.png" alt="logo" style="width:200px;">
                 </a>
                 <ul class="navbar-nav">
                     <li class="menu-ind">
@@ -49,91 +56,57 @@
                 </ul>
             </nav>
     </div>
-        <h2 class="titrr">Formulaire de contact  </h2><hr>
-        <div class="containerForm">
-            <form action="/action_page.php" class="was-validated">
-                    <input type="radio" id="homme" name="sexe" value="homme" checked>
-                    <label for="homme">Monsieur</label>
-                    <input type="radio" id="femme" name="sexe" value="femme">
-                    <label for="femme">Madame</label> <br><br>
-                
-                <div class="form-group">
-                    <label for="Prenom">Prénom : </label>
-                    <input type="text" class="form-control" id="Prenom" name="Prenom" placeholder="Votre Prénom.." pattern="[a-z]{1,15}" required>
-                   <div class="valid-feedback"></div>
-                   <div class="invalid-feedback">Veuillez remplir ce champ.</div>
-                </div>
-                <div class="form-group">
-                    <label for="Nom">Nom de famille : </label>
-                    <input type="text" class="form-control" id="Nom" name="Nom" placeholder="Votre Nom.." pattern="[a-z]{1,15}" required>
-                    <div class="valid-feedback"></div>
-                    <div class="invalid-feedback">Veuillez remplir ce champ.</div>
-                </div>
-                <div class="form-group">
-                    <label for="naissance">Date de naissance : </label>
-                    <input type="date" class="form-control" id="naissance" name="naissance" placeholder="Votre Date de Naissance" required>
-
-                    <div class="valid-feedback"></div>
-                    <div class="invalid-feedback">Veuillez remplir ce champ.</div>
-                </div>
-                    <label for="country">Pays : </label>
-                    <select id="country" name="country">
-                        <option value="france">France</option>
-                        <option value="maroc">Maroc</option>  
-                        <option value="australi">Australie</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">Espagne</option>
-                        <option value="belgique">Belgique</option>  
-                        <option value="paysbas">Pays-bas</option>
-                        <option value="suisse">Suisse</option>
-                        <option value="allemagne">Allemagne</option>
-                        <option value="italie">Italie</option>  
-                        <option value="britich">Royaume-uni</option>
-                        <option value="portugal">Portugal</option>
-                        <option value="finland">Finland</option>
-                    </select>
-          
-                    <label for="subject">Message : </label>
-                    <textarea id="subject" name="message" placeholder="Ecrivez votre message" style="height:200px"></textarea>
-          
-                    <input type="submit" value="Envoyer">
-                
-            </form>
+    <div class=sect>
+      <div class="row">
+        <div class=" col-12 col-sm-6">
+          <img src="assets/img/carteAin.jpg" alt="carte ain">
         </div>
-        
-        
+        <div class=" col-12 col-sm-6">
+          <form class="form-contact" action="traitContact.php" method="POST">
+            <h2 class="form-contact-heading">Formulaire de Contact : </h2>
+            <label for="inputName" class="sr-only">Nom</label>
+            <input type="name" name="name" id="inputName" class="form-control" placeholder="Votre nom">
+            <label for="inputEmail" class="sr-only">E-Mail</label>
+            <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Votre email">
+            <label for="inputSubject" class="sr-only">Sujet</label>
+            <input type="name" name="subject" id="inputSubject" class="form-control" placeholder="Sujet">
+            <label for="inputMessage" class="sr-only">Message</label>
+            <textarea name="message" class="form-control" id="inputMessage" rows="3"></textarea>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <footer>
     
-        <section class="pagebasse">
-            <div class="bleu">
-                <div class="cercle">
-                    <a href="#"><img src="assets/img/facebook.png" class="logo" alt="logo"></a>
-                </div>
-                <div class="cercle">
-                    <a href="#"><img src="assets/img/Indeed.png" class="logo" alt="logo"></a>   
-                </div>
-                <div class="cercle">
-                    <a href="#"><img src="assets/img/instagram.png" class="logo" alt="logo"></a> 
-                </div> 
-                <div class="cercle">
-                    <a href="#"><img src="assets/img/Pinterest.png" class="logo" alt="logo"></a>  
-                </div>
-                <div class="cercle">
-                    <a href="#"><img src="assets/img/tweeter.png" class="logo" alt="logo"></a>  
-                </div>
-            </div>
-            <ul class="list-mentions">
-                <li class="mentions"><a href="#" class="texte">Mentions Légales</a></li>
-                <li class="mentions"><a href="#" class="texte">Conditions Générales</a></li>
-                <li class="mentions"><a href="#" class="texte">Politique des cookies</a></li>
-            </ul>
-            <p class="copyright">Copyright 2021 afk-toutes reproductions interdites</p>
-        </section>
-        
-    </footer>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+      <section class="pagebasse">
+          <div class="bleu">
+              <div class="cercle">
+                  <a href="#"><img src="dossierPourfooter\image\facebook.png" class="logo" alt="logo"></a>
+              </div>
+              <div class="cercle">
+                  <a href="#"><img src="dossierPourfooter\image\Indeed.png" class="logo" alt="logo"></a>   
+              </div>
+              <div class="cercle">
+                  <a href="#"><img src="dossierPourfooter\image\instagram.png" class="logo" alt="logo"></a> 
+              </div> 
+              <div class="cercle">
+                  <a href="#"><img src="dossierPourfooter\image\Pinterest.png" class="logo" alt="logo"></a>  
+              </div>
+              <div class="cercle">
+                  <a href="#"><img src="dossierPourfooter\image\tweeter.png" class="logo" alt="logo"></a>  
+              </div>
+          </div>
+          <ul class="list-mentions">
+              <li class="mentions"><a href="#" class="texte">Mentions Légales</a></li>
+              <li class="mentions"><a href="#" class="texte">Conditions Générales</a></li>
+              <li class="mentions"><a href="#" class="texte">Politique des cookies</a></li>
+          </ul>
+          <p class="copyright">Copyright 2021 afk-toutes reproductions interdites</p>
+      </section>
+      
+  </footer>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-
-
-</body>
-</html>
+    </body>
+    </html>
