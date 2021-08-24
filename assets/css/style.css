@@ -1,5 +1,4 @@
 body{
-    /*font-family: 'Cookie', cursive;*/
     font-size: 13px;
     padding: 15px 15px 15px 15px;
 
@@ -31,11 +30,36 @@ body{
     
  nav a{
     display: inline-block;
-    text-decoration: none;  /*desactiver le trait sous-alignement*/
-    padding: 20px 30px;
+    text-decoration: none !important;  /*desactiver le trait sous-alignement*/
+    padding: 10px 20px;
+    margin-left: 5x; 
     color: #FFF;
-    font-family: 'monospace';
-    text-transform: uppercase;
+    font-family:'Nunito', sans-serif;
+    
+    }
+.containerNav{
+    width: 100%;
+    margin: auto;
+    position: relative;
+   
+}
+
+.header{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+.header__texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: url('../img/ain.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.2; 
+
     }
     
 
@@ -52,47 +76,38 @@ padding: 0px;
 nav li{
 list-style-type: none;  /*retirer les puces de la liste */
 float: left;    /*mettre les elements en ligne*/
+z-index: 999;
 }  
     
-nav a{
-display: inline-block;
-text-decoration: none;/*desactive le trait sous-alignement*/
-padding: 20px 30px;
-color: #FFF;
-text-transform: uppercase;
-}
-
-
 .menu-ind:hover{
 border-top: 5px solid #4C8;
 background-color: RGBa(64, 200, 130, 0.15);
-margin-left: 5px;
+
 
 }
 .menu-lieux:hover{
 border-top: 5px solid #F1DC4F;
 background-color: RGBa(241, 211, 79, 0.15);
-margin-left: 5px;
+
 
 }
 
 .menu-marcheF:hover{
 border-top: 5px solid #5E07EB;
 background-color: RGBa(241, 211, 79, 0.15);
-margin-left: 5px;
+
 
 }
 
 .menu-act:hover{
 border-top: 5px solid #E44D26;
 background-color: RGBa(228, 77, 38, 0.15);
-margin-left: 5px;
+
 
 }
 .menu-cont:hover{
     border-top: 5px solid #de26e4;
     background-color: RGBa(228, 77, 38, 0.15);
-    margin-left: 10px;
     }
 
 
@@ -117,6 +132,13 @@ padding: 15px 30px 20px 30px;
 height: 400px;
 width: 600px;
 object-fit: cover;
+}
+
+.sect{
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .dimensionphoto{
@@ -162,9 +184,30 @@ input[type=text], select, textarea {
     background-color: #45a049;
   }
   
-  .containerF {
+  .containerForm {
     border-radius: 5px;
-    background-color: #8c8c88;
+    background-color: #d3d3d0;
+    margin: 5px 200px;
     padding: 10px;
     margin-bottom: 5px;
   }
+
+  .anime {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  .anime img {
+    max-width: 100%;
+    vertical-align: top;
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+  .anime:hover img,
+  .anime.hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
