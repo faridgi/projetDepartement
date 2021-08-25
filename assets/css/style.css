@@ -72,7 +72,7 @@ padding: 0px;
 
 nav li{
 list-style-type: none;  /*retirer les puces de la liste */
-float: left;    /*mettre les elements en ligne*/
+float: left;   /*mettre les elements en ligne*/
 z-index: 999;
 }  
     

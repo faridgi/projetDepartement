@@ -5,7 +5,8 @@
     $myemail = 'fariduke97@hotmail.fr';//<-----Put Your email address here.
     if(empty($_POST['name']) ||
     empty($_POST['email']) ||
-    empty($_POST['message']))
+    empty($_POST['subject']) ||
+    empty($_POST['message'])
     {
     $errors .= "\n Error: all fields are required";
     }

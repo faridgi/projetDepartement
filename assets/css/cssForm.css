@@ -1,7 +1,11 @@
 
   .form-contact {
     max-width: 100%;
+<<<<<<< Updated upstream
     padding: 15px; 
+=======
+    padding: 15px;
+>>>>>>> Stashed changes
     margin: 0 auto;
   }
   .form-contact .form-contact-heading,
@@ -32,7 +36,11 @@
 .secForm{
   margin-top: 5px;
   margin-bottom: 10px;
+<<<<<<< Updated upstream
   margin-left: 5px; 
+=======
+  margin-left: 5px;
+>>>>>>> Stashed changes
 }
 .imageCont{
   width: 100%;
