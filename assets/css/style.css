@@ -1,6 +1,5 @@
 body{
-    font-size: 13px !important;
-    padding: 15px 15px;
+    /*font-size: px;*/
 
     
     }
@@ -30,8 +29,7 @@ body{
  nav a{
     display: inline-block;
     text-decoration: none !important;  /*desactiver le trait sous-alignement*/
-    padding: 5px 10px;
-    margin-left: 5x; 
+    padding:5px 5px; 
     color: #FFF;
     font-family:'Nunito', sans-serif;
     
@@ -74,7 +72,7 @@ padding: 0px;
 
 nav li{
 list-style-type: none;  /*retirer les puces de la liste */
-float: left;    /*mettre les elements en ligne*/
+float: left;   /*mettre les elements en ligne*/
 z-index: 999;
 }  
     
@@ -129,8 +127,8 @@ padding: 15px 30px 20px 30px;
 
 .carousel img{
 height: 400px;
-width: 600px;
-object-fit: cover;
+width: 800px;
+object-fit: cover; 
 }
 
 .sect{
@@ -138,17 +136,31 @@ object-fit: cover;
     margin-top: 25px 5px;
 }
 
+
+
+.cardreg{
+  height: 100%;
+}
+.cardbodytex{
+  height: fit-content;
+}
+.card-text{
+ height: 100%;
+}
+
+
+
+
+
 .dimensionphoto{
     width: 100%;
     height: 300px;
     object-fit: cover;
 
 }
-
-
 .espace {
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .climat{
