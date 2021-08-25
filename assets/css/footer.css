@@ -1,48 +1,17 @@
-.pagebasse{
-    background-color: #1f2021;
-    max-width: 100%;
-    height: 230px;
-}
+/*footer*/
 
-.bleu{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+.list-style:hover{
+    color: goldenrod;
 }
-
-.cercle{
-    height: 70px;
-    width: 70px;
-    margin-top: 30px;
+.title-foot{
+    color: beige;
 }
-
-.logo{
-    height: 100%;
-    width: 100%;
+.message-footer{
+    color: beige;
 }
-
-.list-mentions{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    list-style: none;
-    margin-top: 30px;
-    opacity: 0.7;
+.text-center > p{
+    color: beige;
 }
-
-.texte{
-    color: white;
-    font-family: 'Great Vibes', cursive;
-    cursor: pointer;
-}
-
-.texte:hover{
-    color: rgb(18, 145, 50);
-}
-
-.copyright{
-    text-align: center;
-    margin-top: 30px;
-    color: white;
+.copyright-style:hover{
+    color: goldenrod;
 }
