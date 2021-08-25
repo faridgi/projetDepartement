@@ -96,7 +96,7 @@ nav a{
         border: solid 2px;
         border-radius: 5px;
         border-color: rgb(91, 100, 82);
-        background-color: rgb(163, 28, 28);
+        background-color: rgb(113, 143, 182);
         padding: 4px;
         margin: 0px;
         color: beige;
@@ -104,10 +104,11 @@ nav a{
         font-family: 'lobster', cursive;
         font-style: italic;
         letter-spacing: 1px;
+        
     }
 
     .start{
-        color: red;
+        color: rgb(116, 151, 204);
         font-size:15px;
         margin: 0;
         padding: 0;
@@ -143,4 +144,5 @@ nav a{
     .position{
         text-align: right;
     }
+    
     
