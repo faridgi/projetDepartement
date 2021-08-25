@@ -2,6 +2,7 @@
 
 .list-style:hover{
     color: goldenrod;
+<<<<<<< HEAD
 }
 .title-foot{
     color: beige;
@@ -15,3 +16,18 @@
 .copyright-style:hover{
     color: goldenrod;
 }
+=======
+}
+.title-foot{
+    color: beige;
+}
+.message-footer{
+    color: beige;
+}
+.text-center > p{
+    color: beige;
+}
+.copyright-style:hover{
+    color: goldenrod;
+}
+>>>>>>> 19974cb671cbfcfb4f44b4b543392bc2450f4296
