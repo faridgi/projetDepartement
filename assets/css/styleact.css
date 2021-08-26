@@ -31,7 +31,7 @@ nav li{
 }
 
 nav a{
-        display: inline-block;
+        /* display: inline-block; */
         text-decoration: none;/*desactiver le trait sous-alignement*/
         padding: 20px 30px;
         color: #FFF;
