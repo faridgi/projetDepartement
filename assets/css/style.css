@@ -1,8 +1,8 @@
-body{
+/* body{ */
     /*font-size: px;*/
 
     
-    }
+
     
     h1, h2{
     font-family: 'Lobster', cursive !important;
@@ -27,7 +27,7 @@ body{
 
     
  nav a{
-    display: inline-block;
+    /* display: inline-block;*/
     text-decoration: none !important;  /*desactiver le trait sous-alignement*/
     padding:5px 5px; 
     color: #FFF;
@@ -126,7 +126,7 @@ padding: 15px 30px 20px 30px;
 }
 
 .carousel img{
-height: 400px;
+height: 600px;
 width: 800px;
 object-fit: cover; 
 }
