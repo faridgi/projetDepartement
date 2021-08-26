@@ -9,8 +9,7 @@
     .sousTitre1, .sousTitre2{
     font-family: 'Lobster';
     font-size: 20px;
-    font-weight: normal;/*la graisse du texte*/
-    text-align: center;
+    
 
     }
 
@@ -33,7 +32,6 @@
     }
     
  nav a{
-    /* display: inline-block; */
     text-decoration: none !important;  /*desactiver le trait sous-alignement*/
     padding:5px 5px;  
     color: #FFF;
@@ -117,13 +115,6 @@ background-color: RGBa(228, 77, 38, 0.15);
 nav li:hover a{
 padding: 15px 30px 20px 30px;
 }
-
-.titrr{
-    padding-top: 5px;
-    margin-top: 5px;
-    color: rgb(63, 61, 61);
-}
-
 
 /* Carousel */
 
