@@ -1,15 +1,17 @@
-body{
-    /*font-size: px;*/
-
-    
+  
+    h1{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: normal;/*la graisse du texte*/
+    text-align: center;
     }
-    
-    h1, h2{
-    font-family: 'Lobster', cursive !important;
+   
+    .sousTitre1, .sousTitre2{
+    font-family: 'Lobster';
     font-size: 20px;
     font-weight: normal;/*la graisse du texte*/
     text-align: center;
-    
+
     }
 
     p{
@@ -24,12 +26,16 @@ body{
         color: red;
         font-size: 150%;
       }
-
+  
+  nav ul{/*reset d'élément de liste*/
+        margin: 0px;
+        padding: 0px;
+    }
     
  nav a{
-    display: inline-block;
+    /* display: inline-block; */
     text-decoration: none !important;  /*desactiver le trait sous-alignement*/
-    padding:5px 5px; 
+    padding:5px 5px;  
     color: #FFF;
     font-family:'Nunito', sans-serif;
     
@@ -126,7 +132,7 @@ padding: 15px 30px 20px 30px;
 }
 
 .carousel img{
-height: 400px;
+height: 600px;
 width: 800px;
 object-fit: cover; 
 }
