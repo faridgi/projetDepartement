@@ -6,13 +6,13 @@
 }
 .footerLink a{
 text-decoration: none;
-color: beige;
+color: white;
 }
 
 .footerLink{
-    font-family: 'Dancing Script';
+    font-family: 'Dancing Script', cursive;
     font-size: 19px;
-    z-index: 5;
+    z-index: 999;
 } 
 .title-foot{
     color: beige;
