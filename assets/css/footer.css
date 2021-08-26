@@ -4,7 +4,7 @@
     color: goldenrod;
     
 }
-.footerLink a{
+.footerLink li a{
 text-decoration: none;
 color: white;
 }
