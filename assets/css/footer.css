@@ -2,7 +2,18 @@
 
 .list-style:hover{
     color: goldenrod;
+    
 }
+.footerLink a{
+text-decoration: none;
+color: white;
+}
+
+.footerLink{
+    font-family: 'Dancing Script', cursive;
+    font-size: 19px;
+    z-index: 999;
+} 
 .title-foot{
     color: beige;
 }
@@ -14,4 +25,24 @@
 }
 .copyright-style:hover{
     color: goldenrod;
+}
+.footerIm{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.lienFooter{
+    z-index: 2;
+}
+.footerIm__texture{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0; left: 0;
+background: url('../img/ain.jpg') center no-repeat;/*image en arriére plan du footer*/
+background-size: cover;
+z-index: 1;
+opacity: 0.1; 
+
 }
