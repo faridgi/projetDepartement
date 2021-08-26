@@ -4,7 +4,7 @@
     color: goldenrod;
     
 }
-.footerLink a{
+.footerLink li a{
 text-decoration: none;
 color: white;
 }
@@ -43,6 +43,6 @@ top: 0; left: 0;
 background: url('../img/ain.jpg') center no-repeat;/*image en arriére plan du footer*/
 background-size: cover;
 z-index: 1;
-opacity: 0.1; 
+opacity: 0.2; 
 
 }
