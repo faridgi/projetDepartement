@@ -12,7 +12,7 @@ body::-webkit-scrollbar-thumb {
 body{
     font-family: verdana sans-serif;
     font-size: 13px;/*taille du texte*/
-    padding: 15px 15px 15px 15px;
+    /* padding: 15px 15px 15px 15px; */
 }
 
 nav{/*étendre le menu navigation sur toute la page*/
