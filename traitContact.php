@@ -4,6 +4,7 @@
     $errors = '';
     $myemail = 'fariduke97@hotmail.fr';//<-----Put Your email address here.
     if(empty($_POST['name']) ||
+    empty($_POST['prenom']) ||
     empty($_POST['email']) ||
     empty($_POST['message']))
     {
@@ -28,7 +29,7 @@
     if( empty($errors))
     
     {
-    $query = "INSERT INTO `contact` (name, email, subject, message, time) VALUES ('$name', '$email_address', '$subject', '$message', NOW())";
+    $query = "INSERT INTO `contact` (name, prenom, email, subject, message, time) VALUES ('$name', '$email_address', '$subject', '$message', NOW())";
     $result = mysqli_query($connection, $query);
     
     $to = $myemail;
