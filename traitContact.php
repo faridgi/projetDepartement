@@ -5,8 +5,7 @@
     $myemail = 'fariduke97@hotmail.fr';//<-----Put Your email address here.
     if(empty($_POST['name']) ||
     empty($_POST['email']) ||
-    empty($_POST['subject']) ||
-    empty($_POST['message'])
+    empty($_POST['message']))
     {
     $errors .= "\n Error: all fields are required";
     }
@@ -29,7 +28,7 @@
     if( empty($errors))
     
     {
-    $query = "INSERT INTO `contact` (name, email, subject, message, time) VALUES ('$name', '$email_address', '$subject', '$message, NOW())";
+    $query = "INSERT INTO `contact` (name, email, subject, message, time) VALUES ('$name', '$email_address', '$subject', '$message', NOW())";
     $result = mysqli_query($connection, $query);
     
     $to = $myemail;
