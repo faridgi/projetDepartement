@@ -1,34 +1,34 @@
 
-  .form-contact {
-    max-width: 100%;
-    padding: 15px; 
-    margin: 0 auto;
-    }
+.form-contact {
+  max-width: 100%;
+  padding: 15px; 
+  margin: 0 auto;
+  }
  
-  .form-contact .form-contact-heading,
-  .form-contact .checkbox {
-    margin-bottom: 10px;
+.form-contact .form-contact-heading,
+.form-contact .checkbox {
+  margin-bottom: 10px;
+}
+.form-contact .checkbox {
+  font-weight: normal;
+}
+.form-contact .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 13px;
   }
-  .form-contact .checkbox {
-    font-weight: normal;
-  }
-  .form-contact .form-control {
-    position: relative;
-    height: auto;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 10px;
-    font-size: 13px;
-  }
-  .form-contact .form-control:focus {
-    z-index: 2;
-  }
-  .form-contact input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
+.form-contact .form-control:focus {
+  z-index: 2;
+}
+.form-contact input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
   
 .secForm{
   font-family: 'Lobster', cursive;

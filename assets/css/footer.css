@@ -12,16 +12,19 @@ color: white;
 .footerLink{
     font-family: 'Dancing Script', cursive;
     font-size: 19px;
-    z-index: 999;
+     z-index: 999;
 } 
 .title-foot{
+    font-family:'Nunito', sans-serif;
     color: beige;
+    z-index: 999;
 }
 .message-footer{
     color: beige;
 }
 .text-center > p{
     color: beige;
+    
 }
 .copyright-style:hover{
     color: goldenrod;
