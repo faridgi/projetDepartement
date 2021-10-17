@@ -67,21 +67,46 @@
         <div class="col-12 col-md-4">
           <form class="form-contact" action="traitContact.php" method="POST">
             <h2 class="form-contact-heading">Formulaire de Contact : </h2>
-            <label for="inputName" class="sr-only">Nom</label>
-            <input type="name" name="name" id="inputName" class="form-control" placeholder="Votre Nom">
 
-            <label for="inputlastname" class="sr-only">Prenom</label>
-            <input type="prenom" name="prenom" id="inputPrenom" class="form-control" placeholder="Votre Prénom">
+            <input type="radio" id="homme" name="sexe" value="homme" checked>
+            <label for="homme">homme</label>
+            <input type="radio" id="femme" name="sexe" value="femme">
+            <label for="femme">femme</label><br>
+            
+            <label for="inputName" class="">Nom :</label>
+            <input type="name" name="name" id="inputName" class="form-control" placeholder="Votre Nom"  pattern="[a-z]{1,15}" required>
 
-            <label for="tel" class="sr-only">téléphone</label>
+            <label for="inputlastname" class="">Prénom :</label>
+            <input type="prenom" name="prenom" id="inputPrenom" class="form-control" placeholder="Votre Prénom"  pattern="[a-z]{1,15}" required>
+
+            <label for="tel" class="">Numéro de téléphone :</label>
             <input type="tel" name="telephone" id="tel" class="form-control" placeholder="Votre numéro de téléphone">
 
-            <label for="inputEmail" class="sr-only">E-Mail</label>
-            <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Votre Email">
-            <label for="inputSubject" class="sr-only">Sujet</label>
-            <input type="name" name="subject" id="inputSubject" class="form-control" placeholder="Sujet">
-            <label for="inputMessage" class="sr-only">Message</label>
-            <textarea name="message" class="form-control" id="inputMessage" rows="3" placeholder="Message"></textarea>
+            <label for="inputEmail" >Adrésse E-Mail :</label>
+            <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Votre Email"  pattern="[a-z]{1,15}" required>
+
+            <labl for="pays" class="" class="form-control">Pays de résidence :</labl>
+            <select id="pays" name="pays" class="form-control" placeholder="Pays de résidence">
+              <optgroup label="Europe">
+                <option value="France">France</option>
+                <option value="Belgique">Belgique</option>
+                <option value="Allemegne">Alemagne</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Portugal">Portugal</option>
+              </optgroup>
+              <optgroup label="Afrique">
+                <option value="Maroc">Maroc</option>
+                <option value="Algerie">Algérie</option>
+                <option value="Tunisie">tunisie</option>
+                <option value="Afriquesud">afrique du sud</option>
+                <option value="Nigeria">Nigeria</option>
+              </optgroup>
+            </select>
+
+            <label for="inputSubject" class="">Sujet :</label>
+            <input type="name" name="subject" id="inputSubject" class="form-control" placeholder="Votre sujet">
+            <label for="inputMessage" class="">Message :</label>
+            <textarea name="message" class="form-control" id="inputMessage" rows="3" placeholder="Votre message"></textarea>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Envoyer</button>
           </form>
           <div id="map-container-section" class="z-depth-1-half map-container-section mb-4 posiImage" style="height: 200px">
